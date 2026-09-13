@@ -60,7 +60,7 @@ The main goals of this build were to:
 7-Zip was installed first, since the Kali Linux VM package is distributed as a compressed archive and needs extracting before it can be imported.
 
 **Tool:** 7-Zip
-
+![image alt](https://github.com/KanishkaManikandan5/NETWORKWALKS-B083-WK1-PM1-CYBERSECURITY-LAB-SETUP/blob/28334f1c2bd083e850c0b0092cd9f22166701b55/1%207ZIP%20SCREENSHOT.jpg)
 
 
 ## Step 2. Install VirtualBox
