@@ -67,7 +67,7 @@ The main goals of this build were to:
 
 VirtualBox itself, along with the matching Extension Pack, was downloaded from the official site and installed as the hypervisor.
 
-![VirtualBox download page](images/2-virtualbox-download.png)
+![VirtualBox download page](https://github.com/KanishkaManikandan5/NETWORKWALKS-B083-WK1-PM1-CYBERSECURITY-LAB-SETUP/blob/fa65e857a4da855e098a6f5c3b81dca94b1458b2/2%20virtual%20box%20screenshot.jpeg)
 
 ---
 
@@ -82,7 +82,7 @@ DHCP:         Enabled
 IPv6:         Disabled
 ```
 
-![NAT Network settings](images/3-nat-network-settings.png)
+![NAT Network settings](https://github.com/KanishkaManikandan5/NETWORKWALKS-B083-WK1-PM1-CYBERSECURITY-LAB-SETUP/blob/fa65e857a4da855e098a6f5c3b81dca94b1458b2/3%20network%20screenshot.jpeg)
 
 A **NAT Network** (rather than plain NAT) was the right choice here, since machines attached to the same NAT Network can reach each other directly while still getting outbound internet access — exactly what's needed once attacker and target VMs are both added to the lab.
 
@@ -92,13 +92,13 @@ A **NAT Network** (rather than plain NAT) was the right choice here, since machi
 
 The Kali Linux archive (~15 GB) was extracted with 7-Zip and imported into VirtualBox as a new VM.
 
-![Importing Kali Linux into VirtualBox](images/4-virtualbox-import-kali.png)
+![Importing Kali Linux into VirtualBox](https://github.com/KanishkaManikandan5/NETWORKWALKS-B083-WK1-PM1-CYBERSECURITY-LAB-SETUP/blob/fa65e857a4da855e098a6f5c3b81dca94b1458b2/4%20oracle%20vmscreenshot.jpeg)
 
 The VM's network adapter was attached to the NAT Network created in Step 3, and shared folders, clipboard, and drag-and-drop were enabled between host and guest.
 
 After booting, a quick `ifconfig` check showed Kali had picked up a DHCP address (`10.0.0.4`) on `eth0` — confirming the NAT Network was working, but not yet the fixed address the lab needs.
 
-![Kali ifconfig showing DHCP address](images/5-kali-dhcp-ifconfig.jpg)
+![Kali ifconfig showing DHCP address](https://github.com/KanishkaManikandan5/NETWORKWALKS-B083-WK1-PM1-CYBERSECURITY-LAB-SETUP/blob/fa65e857a4da855e098a6f5c3b81dca94b1458b2/5%20wireless%20connection%20screenshot.jpeg)
 
 ---
 
@@ -115,13 +115,11 @@ Gateway:     10.0.0.1
 DNS:         8.8.8.8
 ```
 
-![Kali static IP configuration](images/6-kali-network-settings.jpg)
-
 A fixed address like this makes the lab far easier to document and reference in later exercises than a DHCP lease that could change.
 
 Verified afterward with `ip a` / `ifconfig`, now showing the fixed `10.0.0.2` address:
 
-![Kali IP verified as static 10.0.0.2](images/7-kali-ip-verified.jpg)
+![Kali IPverified as static 10.0.0.2](https://github.com/KanishkaManikandan5/NETWORKWALKS-B083-WK1-PM1-CYBERSECURITY-LAB-SETUP/blob/fa65e857a4da855e098a6f5c3b81dca94b1458b2/6%20ip%20screenshot.jpeg)
 
 ---
 
@@ -193,7 +191,7 @@ How much clearer a setup becomes once it's written up step by step with screensh
 
 # 🔐 Security & Ethical Use
 
-This lab exists strictly for learning. It will not be used against any system without clear ownership or explicit written permission.
+This laboratory is intended strictly for education purposes only.
 
 ---
 
